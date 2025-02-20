@@ -1,0 +1,96 @@
+/* .macro-section styles the container that holds the macro information */
+.macro-section {
+  width: 100%;                         /* Occupies full available width */
+  max-width: 350px;                    /* Limits the container width to 350px (suitable for mobile devices) */
+  background-color: #f8d7da;             /* Light pink background */
+  border-radius: 10px;                 /* Rounded corners */
+  padding: 10px;                       /* Internal spacing */
+  margin: 0 auto;                      /* Centers the container horizontally */
+}
+
+/* .macro-content arranges the profile icon and macro info in one row */
+.macro-content {
+  display: flex;                       /* Uses Flexbox layout for horizontal arrangement */
+  flex-direction: row;                 /* Explicitly sets row direction (default behavior) */
+  align-items: flex-start;             /* Aligns items at the top (can be changed to center if desired) */
+}
+
+/* .profile-icon styles the icon on the left side */
+.profile-icon {
+  font-size: 2rem;                     /* Sets a large font size for the icon */
+  margin-right: 10px;                  /* Adds spacing to the right for separation from the macro info */
+}
+
+/* .macro-info arranges the macro details in a vertical column */
+.macro-info {
+  display: flex;                       /* Uses Flexbox for layout */
+  flex-direction: column;              /* Stacks items vertically (top to bottom) */
+  align-items: flex-start;             /* Aligns items to the left (change to center for centering) */
+}
+
+/* .macro-item styles each individual macro item */
+.macro-item {
+  margin-bottom: 10px;                 /* Adds space below each macro item */
+}
+
+/* .label styles the text labels in the macro info */
+.label {
+  font-weight: bold;                   /* Makes the text bold */
+  margin-bottom: 5px;                  /* Adds spacing below the label */
+  display: block;                      /* Displays the label as a block element */
+}
+
+/* .progress-bar styles the container for the progress indicator */
+.progress-bar {
+  background-color: #eee;              /* Light grey background for the progress bar */
+  border-radius: 5px;                  /* Rounded corners */
+  overflow: hidden;                    /* Hides overflow, ensuring the progress bar stays within bounds */
+  height: 10px;                        /* Sets a fixed height for the progress bar */
+  width: 100%;                         /* Occupies full width of the container */
+}
+
+/* .progress styles the actual progress indicator inside the progress bar */
+.progress {
+  height: 100%;                        /* Fills the full height of the progress bar */
+  background-color: #6a994e;           /* Sets a green color for the progress (default green) */
+}
+
+/* .macro-modal creates a full-screen, semi-transparent overlay for modal dialogs */
+.macro-modal {
+  position: fixed;                     /* Fixed positioning to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;                         /* Full viewport width */
+  height: 100%;                        /* Full viewport height */
+  z-index: 9999;                       /* High stacking order to appear on top */
+  background-color: rgba(0, 0, 0, 0.4);  /* Semi-transparent black background for dimming effect */
+  
+  display: flex;                       /* Uses Flexbox to center content */
+  align-items: center;                 /* Vertically centers the modal content */
+  justify-content: center;             /* Horizontally centers the modal content */
+}
+
+/* .macro-modal-content styles the modal box inside the overlay */
+.macro-modal-content {
+  background-color: #fff;              /* White background for the modal */
+  padding: 20px;                       /* Internal spacing */
+  border-radius: 8px;                  /* Rounded corners */
+  width: 300px;                        /* Sets a fixed width of 300px */
+  max-width: 90%;                      /* Ensures responsiveness on mobile (max width 90%) */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  position: relative;                  /* Relative positioning for potential further adjustments */
+}
+
+/* Modal input styling inside .macro-modal-content */
+.macro-modal-content input {
+  margin: 8px 0;                       /* Vertical margin for spacing between inputs */
+  padding: 6px;                        /* Padding inside input fields */
+  width: 100%;                         /* Inputs take full width of the modal content */
+  box-sizing: border-box;              /* Includes padding and border in the element's total width */
+}
+
+/* Modal button styling inside .macro-modal-content */
+.macro-modal-content button {
+  margin-top: 10px;                    /* Space above the button */
+  padding: 6px 12px;                   /* Padding for a comfortable button size */
+}

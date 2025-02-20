@@ -1,0 +1,36 @@
+/* General Container Styling */
+/* Adds a top margin and extra bottom padding to avoid overlapping with the footer */
+.profile-container {
+  margin-top: 1rem;        /* Top margin of 1rem */
+  padding-bottom: 120px;    /* Bottom padding of 120px */
+}
+
+/* Card Styling */
+/* Applies padding and a subtle box shadow to create depth for the card element */
+.profile-card {
+  padding: 1rem;           /* Internal spacing of 1rem */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Profile Image */
+/* Styles the profile image to be circular with fixed dimensions and cover scaling */
+.profile-img {
+  width: 150px;            /* Fixed width of 150px */
+  height: 150px;           /* Fixed height of 150px */
+  object-fit: cover;       /* Ensures the image covers the area without distortion */
+  border-radius: 50%;      /* Makes the image circular */
+  margin-bottom: 1rem;     /* Adds bottom margin of 1rem */
+}
+
+/* Form Input Group */
+/* Adds consistent bottom spacing between form groups */
+.profile-form-group {
+  margin-bottom: 1rem;     /* Bottom margin of 1rem for separation */
+}
+
+/* Button Styles */
+/* Ensures the button spans the full width and adds a small top margin */
+.profile-btn {
+  width: 100%;             /* Button takes up full container width */
+  margin-top: 0.5rem;      /* Top margin of 0.5rem for spacing */
+}

@@ -1,0 +1,70 @@
+/* Progress Page Styling */
+/* Container for the progress page content */
+.progress-container {
+  margin-top: 1rem;         /* Adds space above the container */
+  padding-bottom: 120px;      /* Extra bottom padding to avoid footer overlap */
+}
+
+/* Title Styling */
+/* Styles the title of the progress section */
+.progress-title {
+  font-size: 1.8rem;         /* Large font size for emphasis */
+  font-weight: bold;         /* Bold text for prominence */
+  color: #0d6efd;            /* Blue color for the title */
+  margin-bottom: 1rem;       /* Space below the title */
+}
+
+/* Dropdown Styling */
+/* Container for the time filter dropdown */
+.time-filter {
+  margin-bottom: 1rem;       /* Space below the dropdown */
+}
+
+/* Custom Select Styling */
+/* Styles the select element for consistent appearance */
+.custom-select {
+  border-radius: 10px;       /* Rounded corners */
+  padding: 10px;             /* Internal padding */
+  font-size: 1rem;           /* Standard font size */
+}
+
+/* Progress Card Styling */
+/* Styles for the card displaying progress data */
+.progress-card {
+  border-radius: 15px;       /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 1rem;       /* Space below each card */
+  padding: 1rem;             /* Internal spacing for content */
+  text-align: center;        /* Centers the text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+}
+
+/* Progress Card Hover Effect */
+/* Enhances visual feedback when hovering over a card */
+.progress-card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+  cursor: pointer;             /* Changes cursor to pointer to indicate clickability */
+}
+
+/* Step Count Card */
+/* Specific styling for the step count card using a green gradient */
+.step-card {
+  background: linear-gradient(135deg, #4CAF50, #81C784); /* Green gradient background */
+  color: white;             /* White text for contrast */
+}
+
+/* Calories Burned Card */
+/* Specific styling for the calories burned card using an orange gradient */
+.calorie-card {
+  background: linear-gradient(135deg, #FF5722, #FF8A65); /* Orange gradient background */
+  color: white;             /* White text for readability */
+}
+
+/* Progress Numbers */
+/* Styles the numerical display for progress metrics */
+.progress-number {
+  font-size: 2rem;          /* Large font size for clarity */
+  font-weight: bold;        /* Bold text for emphasis */
+  margin-top: 0.5rem;       /* Small margin above the number */
+}

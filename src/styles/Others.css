@@ -1,0 +1,75 @@
+/* Others Card */
+/* Styles the card container for individual "Others" items with spacing, shadow, and smooth transitions */
+.others-card {
+  margin-bottom: 1rem; /* Adds space below each card */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Applies a subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Smooth transitions for hover effects */
+}
+
+/* Hover Effect */
+/* Enhances the visual feedback when the user hovers over a card */
+.others-card:hover {
+  transform: translateY(-3px); /* Slightly lifts the card upward */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increases the shadow for a more prominent effect */
+  cursor: pointer; /* Changes cursor to pointer, indicating clickability */
+  background-color: var(--hover-color, #f8f9fa); /* Changes background color using a CSS variable or fallback */
+}
+
+/* Others Card Body */
+/* Organizes the content inside the card with flex layout for proper alignment */
+.others-card-body {
+  display: flex; /* Uses Flexbox to arrange child elements */
+  align-items: center; /* Vertically centers the child elements */
+  padding: 15px; /* Adds padding around the card content */
+}
+
+/* Others Link */
+/* Styles the link inside the card to be fully clickable and inherit text color */
+.others-link {
+  display: flex; /* Uses Flexbox for layout */
+  align-items: center; /* Vertically centers items within the link */
+  text-decoration: none; /* Removes underline from the link text */
+  width: 100%; /* Makes the link take the full width of its container */
+  color: inherit; /* Inherits the text color from its parent */
+}
+
+/* Others Icon */
+/* Styles the icon within the "Others" card for better visibility and spacing */
+.others-icon {
+  font-size: 2rem; /* Sets a large font size for the icon */
+  margin-right: 15px; /* Adds space to the right of the icon */
+}
+
+/* Others Title */
+/* Styles the title text within the "Others" card */
+.others-title {
+  margin-bottom: 0; /* Removes bottom margin */
+  font-weight: bold; /* Makes the text bold */
+  color: #343a40; /* Sets a dark grey color for the text */
+}
+
+/* Categories Container */
+/* Provides spacing for the container that holds category sections */
+.categories-container {
+  margin-top: 1rem; /* Adds top margin */
+  padding-bottom: 120px; /* Adds bottom padding to avoid overlap with other elements (e.g., footer) */
+}
+
+/* === CATEGORIES SECTION === */
+/* Styles for the title container of the categories section */
+.categories-title-container {
+  width: 100%; /* Full width of its container */
+  padding: 1rem 0; /* Vertical padding */
+  margin-bottom: 10px; /* Bottom margin for spacing */
+  margin-top: 10px; /* Top margin for spacing */
+  background-color: #d4edda; /* Light green background color */
+}
+
+/* Categories Title */
+/* Styles the heading of the categories section */
+.categories-title {
+  font-size: 1.8rem; /* Large font size for the title */
+  color: #343a40; /* Dark grey color for the text */
+  font-weight: bold; /* Bold text */
+  margin: 0; /* Removes default margins */
+}
